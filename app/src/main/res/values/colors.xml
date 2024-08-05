@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azure_2">@android:color/holo_blue_light</color>
+    <color name="azure_3">@android:color/holo_blue_dark</color>
+    <color name="azure_1">@android:color/holo_blue_light</color>
+    <color name="dark_grey">@color/material_dynamic_secondary30</color>
+    <color name="azure_4">@color/material_dynamic_primary50</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_by_title"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/searchEditText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@+id/addButton"
+        android:backgroundTint="@color/azure_2"
+        android:textColor="@color/black"
+        android:text="@string/search" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchEditText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/azure_2"
+        android:contentDescription="@string/add_button_description"
+        android:src="@drawable/add_button"
+        app:fabSize="mini"/>
+
+    <ListView
+        android:id="@+id/passwordListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_below="@id/searchButton"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
